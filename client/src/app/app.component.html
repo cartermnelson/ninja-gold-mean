@@ -1,0 +1,11 @@
+<h1>Total Gold: {{gold}}</h1>
+<button (click)="farm()">Search farm</button>
+<button (click)="cave()">Search cave</button>
+<button (click)="house()">Search house</button>
+<button (click)="casino()">Search casino</button>
+<h2>Adventure log</h2>
+<div id="log" style="overflow: auto; height: 400px; border: 1px solid black; padding-left: 20px" scroll-glue>
+  <p *ngFor="let entry of log">{{entry}}</p>
+</div>
+<br>
+<button (click)="reset()">Reset</button>
